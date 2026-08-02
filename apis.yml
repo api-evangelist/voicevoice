@@ -1,4 +1,16 @@
 aid: voicevoice
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/voicevoice.png
 name: VoiceVoice
 description: VoiceVoice is a company surfaced as a portfolio company of 500-global and added to the API
   Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,9 +23,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-status: defunct
+x-status-note: MaestroConference (its website) is no longer in business; voicevoice.com
+  serves a parked cPanel default page. No public API, docs, or developer surface found.
 tags:
 - Company
+- Conferencing
+- Audio
+- Communications
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +40,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/voicevoice-domain-security.yml
 - type: Website
   url: https://maestroconference.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
